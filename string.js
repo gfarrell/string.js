@@ -72,4 +72,6 @@ define(function() {
     String.prototype.format = function() {
         throw new Error('Not implemented.');
     };
+    
+    return String;
 });
