@@ -1,5 +1,7 @@
 /* global define */
 define(function() {
+    'use strict';
+
     /**
      * Capitalises the first letter of every word in a string.
      * @return {string} capitalised string
@@ -72,6 +74,6 @@ define(function() {
     String.prototype.format = function() {
         throw new Error('Not implemented.');
     };
-    
+
     return String;
 });
