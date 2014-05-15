@@ -40,7 +40,7 @@ define(function() {
      * @return {string} de-camelCased string
      */
     String.prototype.deCamelCase = function() {
-        return this.replace(/([a-z])([A-Z])/g, '$1 $2');
+        return this.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase();
     };
 
     /**
