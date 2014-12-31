@@ -1,5 +1,4 @@
-/* global define */
-define(function() {
+(function() {
     'use strict';
 
     /**
@@ -75,5 +74,13 @@ define(function() {
         throw new Error('Not implemented.');
     };
 
-    return String;
-});
+    // AMD - requirejs
+    if(typeof define == 'function') {
+        define([], function() { return String; });
+    }
+
+    // Node.js / CommonJS module
+    if(typeof module != 'undefined') {
+        module.exports = String;
+    }
+})();
